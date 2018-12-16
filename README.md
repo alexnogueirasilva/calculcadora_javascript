@@ -1,6 +1,6 @@
 # Calculadora JavaScript
 
-[![Alex Desenvolvedor fullstack](hhttp://www.alexnogueira.tech/img/logo_alex.png)](http://www.alexnogueira.tech/)
+[![Alex Desenvolvedor fullstack](http://alexnogueira.epizy.com/img/logo_alex.png)](http://www.alexnogueira.tech/)
 
 
 
