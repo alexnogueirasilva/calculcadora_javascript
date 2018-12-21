@@ -63,15 +63,24 @@ class CalcController
             {
                 if(isNaN(this.getLatOperation()))
                     {
-                        if(this.isOperator(value));
+                        if(this.isOperator(value)){
                         this._operation[this._operation.length-1] = value;
 
-                    }else
+                        }else if(isNaN(value))
+                        {
+                            console.log(value);
+
+                        }else
+                            {
+                                this._operation;push(value);
+                            }
+
+                    }else 
                         {
                             let newValue = this.getLatOperation().toString() + value.toString();
                             this._operation.push();
                         }
-            }    
+            }   
             
         execBtn(value)
              {
