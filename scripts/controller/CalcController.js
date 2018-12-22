@@ -2,7 +2,6 @@ class CalcController
     {
         constructor()
         {
-            this._operation = [];
             this._locale = 'pt-BR';
             this._displayCalcEl = document.querySelector("#display");
             this._dateEl = document.querySelector("#data");
@@ -32,71 +31,14 @@ class CalcController
                         element.addEventListener(event, fn, false);
                     });
             }
-
-
-        clearAll()
-            {
-                this._operation = [];
-            }
-
-         clearEntry()
-            {
-                this._operation.pop9;
-            }
             
-        setError()
-            {
-                this.displayCalc = "Error";
-            }
-            
-        addOperation()
-            {
-                this._operation.push();
-
-            }    
-            
-        execBtn(value)
-             {
-                    switch(value)
+            execBtn(value)
                 {
-                    case 'AC':
-                        this.clearAll;
-                    break;
+                    switch(value)
+                    {
 
-                    case 'ce':
-                        this.clearEntry;
-                    break;
-
-                    case 'soma':
-
-                    break;
-
-                    case 'subtracao':
-
-                    break;
-
-                    case 'divisao':
-
-                    break;
-
-                    case 'multiplicacao':
-
-                    break;
-
-                    case 'porcento':
-
-                    break;
-
-                    case 'igual':
-
-                    break;
-
-                    default :
-                        this.setError();
-                        break;
-
-                 }
-            }
+                    }
+                }
 
             initButtonsEvents()
                 {
