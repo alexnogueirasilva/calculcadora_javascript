@@ -2,6 +2,7 @@ class CalcController
     {
         constructor()
         {
+            this._operation = [];
             this._locale = 'pt-BR';
             this._displayCalcEl = document.querySelector("#display");
             this._dateEl = document.querySelector("#data");
@@ -9,7 +10,7 @@ class CalcController
             this._currentDate;
             this.initialize();
             this.initButtonsEvents();
-           // this.addEventListenerAll();
+
         }
 
         initialize()
@@ -24,22 +25,71 @@ class CalcController
 
             }
 
+        clearAll()
+            {
+                
+            }    
+
+        execBtn(value)
+            {
+                switch(value)
+                {
+
+                    case 'ac':
+
+                    break;
+
+                    case 'ce':
+
+                    break;
+
+                    case 'divisao':
+
+                    break;
+
+                    case 'multiplicacao':
+
+                    break;
+
+                    case 'subtracao':
+
+                    break;
+
+                    case 'soma':
+
+                    break;
+
+                    case '':
+
+                    break;
+
+                    case '1':
+                    case '2':
+                    case '3':
+                    case '4':
+                    case '5':
+                    case '6':
+                    case '7':
+                    case '8':
+                    case '9':
+
+                    break;
+
+
+                }
+            }
+
+
         addEventListenerAll(element, events, fn)
             {
                 events.split(' ').forEach(event =>
                     {
                         element.addEventListener(event, fn, false);
+
                     });
             }
             
-            execBtn(value)
-                {
-                    switch(value)
-                    {
-
-                    }
-                }
-
+          
             initButtonsEvents()
                 {
                     let buttons = document.querySelectorAll("#buttons > g, #parts > g")
@@ -72,7 +122,7 @@ class CalcController
                 return this._displayCalcEl.innerHTML;
             }
 
-        get displayTime ()
+        get displayTime()
             {
                 return this._timeEl.innerHTML;
             }
