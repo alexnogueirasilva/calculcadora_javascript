@@ -76,6 +76,8 @@ class CalController
 
                 this._operation = [result, last];
 
+                this.setLastNumberToDisplay();
+
             }   
             
         setError()
@@ -127,7 +129,7 @@ class CalController
                             if(this.isOperator(value))
                                 {
                                     this.pushOperation(value);
-                                    this.setLastNumberToDisplay(value);
+
                                 } else 
                                     {
                                         
